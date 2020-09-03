@@ -15,6 +15,8 @@
 		7D0718D62500AEB3005E6D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0718D42500AEB3005E6D7A /* LaunchScreen.storyboard */; };
 		7D0718DE2500B171005E6D7A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0718DD2500B171005E6D7A /* ToDo.swift */; };
 		7D0718E02500B22C005E6D7A /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0718DF2500B22C005E6D7A /* ToDoTableViewController.swift */; };
+		7D0718E22500BF7D005E6D7A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0718E12500BF7D005E6D7A /* AddViewController.swift */; };
+		7D0718E42501451E005E6D7A /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0718E32501451E005E6D7A /* CompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7D0718D72500AEB3005E6D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D0718DD2500B171005E6D7A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		7D0718DF2500B22C005E6D7A /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		7D0718E12500BF7D005E6D7A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		7D0718E32501451E005E6D7A /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				7D0718C82500AEB2005E6D7A /* SceneDelegate.swift */,
 				7D0718DD2500B171005E6D7A /* ToDo.swift */,
 				7D0718DF2500B22C005E6D7A /* ToDoTableViewController.swift */,
+				7D0718E12500BF7D005E6D7A /* AddViewController.swift */,
+				7D0718E32501451E005E6D7A /* CompleteViewController.swift */,
 				7D0718CC2500AEB2005E6D7A /* Main.storyboard */,
 				7D0718D22500AEB3005E6D7A /* Assets.xcassets */,
 				7D0718D42500AEB3005E6D7A /* LaunchScreen.storyboard */,
@@ -146,7 +152,9 @@
 			files = (
 				7D0718C72500AEB2005E6D7A /* AppDelegate.swift in Sources */,
 				7D0718C92500AEB2005E6D7A /* SceneDelegate.swift in Sources */,
+				7D0718E22500BF7D005E6D7A /* AddViewController.swift in Sources */,
 				7D0718D12500AEB2005E6D7A /* NeedToDo.xcdatamodeld in Sources */,
+				7D0718E42501451E005E6D7A /* CompleteViewController.swift in Sources */,
 				7D0718DE2500B171005E6D7A /* ToDo.swift in Sources */,
 				7D0718E02500B22C005E6D7A /* ToDoTableViewController.swift in Sources */,
 			);
