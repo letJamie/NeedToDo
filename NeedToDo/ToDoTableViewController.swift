@@ -10,15 +10,13 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
     
-    
     var toDos: [ToDoItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
     }
-    
+     
     override func viewWillAppear(_ animated: Bool) {
         
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
@@ -59,16 +57,11 @@ class ToDoTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let createVC = segue.destination as? AddViewController {
-            createVC.toDoTableVC = self
-        }
-        
         if let completeVC = segue.destination as? CompleteViewController {
-            if let toDo = sender as? ToDo {
+            if let toDo = sender as? ToDoItem {
                
                 completeVC.todo = toDo
-                completeVC.toDoTableVC = self
-
+                
             }
         }
     }

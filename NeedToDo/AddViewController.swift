@@ -15,12 +15,9 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var importantSwitch: UISwitch!
     
-    var toDoTableVC: ToDoTableViewController? = nil
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     

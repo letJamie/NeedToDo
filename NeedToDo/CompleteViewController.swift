@@ -12,36 +12,27 @@ class CompleteViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
     
-    var todo = ToDo()
-    
-    var toDoTableVC: ToDoTableViewController? = nil
-    
+    var todo: ToDoItem? = nil
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        mainLabel.text = todo.name
-        
-        // Do any additional setup after loading the view.
+        if let name = todo?.name {
+            
+            mainLabel.text = name
+        }
     }
     
     @IBAction func completeTapped(_ sender: Any) {
         
-        if let toDos = toDoTableVC?.toDos {
-            var index = 0
-            for x in toDos {
-                if x.name == todo.name {
-                    toDoTableVC?.toDos.remove(at: index)
-                    toDoTableVC?.tableView.reloadData()
-                    navigationController?.popViewController(animated: true)
-                    return
-                }
-                
-                index += 1
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            if todo != nil {
+                context.delete(todo!)
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                navigationController?.popViewController(animated: true)
+
             }
         }
-        
     }
-    
-  
 }
